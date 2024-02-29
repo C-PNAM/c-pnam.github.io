@@ -9,6 +9,6 @@ categories: jekyll update
   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML">
 </script>
 
-This is a post about graphene and blackholes
+This is a post about graphene and blackholes $x+y$
 
 $$\frac{1}{2}$$
