@@ -6,3 +6,5 @@ categories: jekyll update
 ---
 
 This is a post about graphene and blackholes
+
+$$\frac{1}{2}$$
