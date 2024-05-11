@@ -3,9 +3,10 @@ layout: post
 title:  "Graphene Blackholes!"
 date:   2024-02-28 22:24:54 +0000
 categories: jekyll update
-exclude: true
 ---
 {% include mathjax.html %}
+
+Graphene is a remarkable material, it is a single layer thick 
 
 The discovery of the remarkable electronic properties of graphene has had a major impact on condensed matter physics and semiconductor device technology (1-3]. Furthermore, graphene's unique band structure, in which the free electrons behave as massless, relativistic Dirac-Weyl fermions in two dimensions, has interesting implications in other branches of physics. For example, graphene can be regarded as abridge between condensed matter physics and quantum field theory, providing insights into quantum electrodynamics and Klein tunnelling [4,5]. Gravity-like phenomena and curved space-times in graphene and electromagnetic black holes based on graphene have also been considered [6-9].
 
