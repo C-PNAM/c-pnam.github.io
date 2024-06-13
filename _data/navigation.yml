@@ -2,4 +2,5 @@ main:
   - title: "About"
   - title: "People"
   - title: "Location"
+  - url: "_themes/SCES.md"
   - title: "Facilities"

@@ -25,7 +25,7 @@ feature_row:
 
 carousels:
   - images: 
-    - image: /images/fasil-dejene-inline2.jpg
+    - image: images/fasil-dejene-inline2.jpg
     - image: images/spin_liquid_logo.png
     - image: images/neuromorphiclogo.jpeg
     - image: images/spin_liquid_logo.png
@@ -34,8 +34,7 @@ carousels:
 #    overlay_image: /images/header.png
 ---
 
-{% include carousel.html height="50" unit="%" duration="7" number="1" %}
-
+{% include carousel.html height="30" unit="%" duration="7" number="1" %}
 
 Welcome to the Centre for Advanced Materials and Devices (CAMD), a pioneering hub dedicated to advancing the frontiers of materials science and technology. Our center focuses on the development and application of advanced materials, quantum technologies, neuromorphic devices, and biomedical innovations, including nuclear medicine.
 
