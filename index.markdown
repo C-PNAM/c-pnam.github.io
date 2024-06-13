@@ -23,6 +23,12 @@ feature_row:
     title: "Medical Physics"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
 
+carousels:
+  - images: 
+    - image: /images/fasil-dejene-inline2.jpg
+    - image: images/spin_liquid_logo.png
+    - image: images/neuromorphiclogo.jpeg
+    - image: images/spin_liquid_logo.png
 
 header:
     overlay_image: /images/header.png
@@ -31,4 +37,4 @@ Welcome to the Centre for Advanced Materials and Devices (CAMD), a pioneering hu
 
 {% include feature_row %}
 
-
+  {% include carousel.html height="50" unit="%" duration="7" number="1" %}
