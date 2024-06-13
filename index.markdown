@@ -7,11 +7,11 @@ layout: splash
 feature_row:
   - image_path: /images/fasil-dejene-inline2.jpg
     alt: "placeholder image 1"
-    title: "Placeholder 1"
+    title: "Van der Waals materials"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
   - image_path: images/neuromorphiclogo.jpeg
     alt: "placeholder image 2"
-    title: "Placeholder 2"
+    title: "Neuromorphic Devices"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
     url: "#test-link"
     btn_label: "Read More"
