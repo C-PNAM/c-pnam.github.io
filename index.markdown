@@ -17,7 +17,10 @@ feature_row:
     btn_label: "Read More"
     btn_class: "btn--inverse"
   - image_path: images/spin_liquid_logo.png
-    title: "Placeholder 3"
+    title: "Strongly Correlated Electron Systems"
+    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+  - image_path: images/spin_liquid_logo.png
+    title: "Medical Physics"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
 
 
