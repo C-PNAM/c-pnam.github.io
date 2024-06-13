@@ -23,7 +23,7 @@ feature_row:
     #excerpt: "This is some sample content that goes here with **Markdown** formatting."
   - image_path: images/spin_liquid_logo.png
     title: "Medical Physics"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    excerpt: ""
 
 carousels:
   - images: 

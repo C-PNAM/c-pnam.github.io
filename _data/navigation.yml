@@ -1,6 +1,6 @@
 main: 
   - title: "About"
   - title: "People"
+    url: /people/
   - title: "Location"
-    url: /SCES/
   - title: "Facilities"
