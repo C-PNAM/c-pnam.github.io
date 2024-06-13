@@ -19,7 +19,7 @@ feature_row:
     #btn_class: "btn--inverse"
   - image_path: images/spin_liquid_logo.png
     title: "Strongly Correlated Electron Systems"
-    url: /neuromorphic/
+    url: /sces/
     #excerpt: "This is some sample content that goes here with **Markdown** formatting."
   - image_path: images/spin_liquid_logo.png
     title: "Medical Physics"
