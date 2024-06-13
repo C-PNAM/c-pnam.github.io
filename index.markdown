@@ -35,17 +35,17 @@ carousels:
 #{% include carousel.html height="30" unit="%" duration="7" number="1" %}
 #header:
 #    overlay_image: /images/header.png
-#{% include feature_row %}
+#
 ---
 
 
 
 Welcome to the Centre for Advanced Materials and Devices (CAMD), a pioneering hub dedicated to advancing the frontiers of materials science and technology. Our center focuses on the development and application of advanced materials, quantum technologies, neuromorphic devices, and biomedical innovations, including nuclear medicine.
-
-<figure style="width: 80px" class="align-center">
+{% include feature_row %}
+<!-- <figure style="width: 80px" class="align-center">
   <a href="/images/blackhole.jpg" title="The Pixel Tracker logo" alt="The Pixel Tracker logo">
   <img src="/images/blackhole.jpg" alt=""></a>
   <figcaption>Image caption.</figcaption>
-</figure>
+</figure> -->
 
 
