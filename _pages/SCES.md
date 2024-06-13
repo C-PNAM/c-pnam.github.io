@@ -6,7 +6,7 @@
 ## Project members: Prof. Joseph Betouras, Prof. Feo Kusmartsev
 layout: single
 title: Theory of Strongly Correlated Electron Systems
-
+permalink: /SCES/
 ---
 
 
