@@ -34,8 +34,9 @@ github_username:  jekyll
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+  - jekyll-remote-theme
 
-remote_theme: "mmistakes/minimal-mistakes@4.26.1"
+remote_theme: jekyll/minima
 
 kramdown:
   math_engine: mathjax
