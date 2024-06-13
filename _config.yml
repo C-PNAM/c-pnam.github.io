@@ -39,7 +39,7 @@ plugins:
 theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "air" # "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 logo: "/images/centrelogo.png"
-
+breadcrumbs: true
 
 kramdown:
   math_engine: mathjax
