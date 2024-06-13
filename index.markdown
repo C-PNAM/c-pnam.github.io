@@ -33,9 +33,9 @@ carousels:
     - image: images/spin_liquid_logo.png
 
 #{% include carousel.html height="30" unit="%" duration="7" number="1" %}
-#header:
-#    overlay_image: /images/header.png
-#
+header:
+    overlay_image: /images/header.png
+
 ---
 
 
