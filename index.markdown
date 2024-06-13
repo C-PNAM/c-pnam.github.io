@@ -24,7 +24,7 @@ feature_row:
 header:
     overlay_image: /images/header.png
 ---
-Welcome to the Centre for Quantum Materials and Devices (CQMD), a pioneering hub dedicated to advancing the frontiers of quantum science and technology. Our center is at the forefront of research and innovation, exploring the unique properties of quantum materials and developing cutting-edge devices that harness the principles of quantum mechanics.
+Welcome to the Centre for Advanced Materials and Devices (CAMD), a pioneering hub dedicated to advancing the frontiers of materials science and technology. Our center focuses on the development and application of advanced materials, quantum technologies, neuromorphic devices, and biomedical innovations, including nuclear medicine.
 
 {% include feature_row %}
 
