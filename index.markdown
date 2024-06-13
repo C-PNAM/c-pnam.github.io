@@ -9,16 +9,18 @@ feature_row:
     alt: "placeholder image 1"
     title: "Van der Waals materials"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    url: /vdw/
   - image_path: images/neuromorphiclogo.jpeg
     alt: "placeholder image 2"
     title: "Neuromorphic Devices"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
-    url: "#test-link"
-    btn_label: "Read More"
-    btn_class: "btn--inverse"
+    excerpt: ""
+    url: /neuromorphic/
+    #btn_label: "Read More"
+    #btn_class: "btn--inverse"
   - image_path: images/spin_liquid_logo.png
     title: "Strongly Correlated Electron Systems"
-    excerpt: "This is some sample content that goes here with **Markdown** formatting."
+    url: /neuromorphic/
+    #excerpt: "This is some sample content that goes here with **Markdown** formatting."
   - image_path: images/spin_liquid_logo.png
     title: "Medical Physics"
     excerpt: "This is some sample content that goes here with **Markdown** formatting."
@@ -30,11 +32,12 @@ carousels:
     - image: images/neuromorphiclogo.jpeg
     - image: images/spin_liquid_logo.png
 
+#{% include carousel.html height="30" unit="%" duration="7" number="1" %}
 #header:
 #    overlay_image: /images/header.png
 ---
 
-{% include carousel.html height="30" unit="%" duration="7" number="1" %}
+
 
 Welcome to the Centre for Advanced Materials and Devices (CAMD), a pioneering hub dedicated to advancing the frontiers of materials science and technology. Our center focuses on the development and application of advanced materials, quantum technologies, neuromorphic devices, and biomedical innovations, including nuclear medicine.
 
