@@ -4,7 +4,7 @@
 ## 1. Quantum criticality, Fermi-surface topological transitions and higher-order van-Hove singularities
 
 ## Project members: Prof. Joseph Betouras, Prof. Feo Kusmartsev
-layout: post
+layout: single
 title: Theory of Strongly Correlated Electron Systems
 permalink: /SCES/
 ---
