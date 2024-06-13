@@ -36,7 +36,7 @@ plugins:
   - jekyll-include-cache
   - jekyll-remote-theme
 
-remote_theme: jekyll/minima
+theme: minimal-mistakes-jekyll
 
 kramdown:
   math_engine: mathjax
