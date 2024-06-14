@@ -5,7 +5,7 @@
 
 ## Project members: Prof. Joseph Betouras, Prof. Feo Kusmartsev
 layout: single
-title: Neuromorphic Devices
+title: Neuromorphic Technologies
 permalink: /neuromorphic/
 ---
 

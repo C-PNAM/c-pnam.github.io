@@ -12,7 +12,7 @@ feature_row:
     url: /vdw/
   - image_path: images/neuromorphiclogo.jpeg
     alt: "placeholder image 2"
-    title: "Neuromorphic Devices"
+    title: "Neuromorphic Technologies"
     excerpt: ""
     url: /neuromorphic/
     #btn_label: "Read More"
@@ -40,7 +40,7 @@ header:
 
 
 
-Welcome to the Centre for Advanced Materials and Devices (CAMD), a pioneering hub dedicated to advancing the frontiers of materials science and technology. Our center focuses on the development and application of advanced materials, quantum technologies, neuromorphic devices, and biomedical innovations, including nuclear medicine.
+Welcome to the Loughborough Centre for Condensed Matter (LCCM), a pioneering hub dedicated to advancing the frontiers of fundamental materials physics and technology. Our center focuses on the development and application of advanced materials, quantum technologies, neuromorphic devices, and biomedical innovations, including nuclear medicine.
 {% include feature_row %}
 <!-- <figure style="width: 80px" class="align-center">
   <a href="/images/blackhole.jpg" title="The Pixel Tracker logo" alt="The Pixel Tracker logo">
