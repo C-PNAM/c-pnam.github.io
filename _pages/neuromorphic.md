@@ -13,7 +13,7 @@ Novel devices mimicking functionality of human neural systems – neuromorphic d
 
 Our group of researchers is working on modelling, fabrication, optimisation and testing of various neuromorphic memristor devices and artificial-neural networks based on different physical principles and computer architectures, in partnership with world-leading artificial intelligence companies and in collaboration with the Loughborough Departments of Chemistry and Computer Science, The University of Southampton, CNRS, Texas A&M University and other centres of neuromorphic research.
 
-Fig caption: Sketch of future computer devices with the central “brain-like” part perform both memorising and processing information of stimulation provided via peripheral wire-like connections.
+ Fig caption: Sketch of future computer devices with the central “brain-like” part perform both memorising and processing information of stimulation provided via peripheral wire-like connections.
 
 References
 

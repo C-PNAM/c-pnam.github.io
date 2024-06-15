@@ -1,6 +1,8 @@
 main: 
   - title: "About"
+    /About/
   - title: "People"
     url: /people/
   - title: "Location"
+    url: /location/
   - title: "Facilities"
