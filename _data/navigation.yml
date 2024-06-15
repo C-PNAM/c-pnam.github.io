@@ -1,8 +1,9 @@
 main: 
   - title: "About"
-    /About/
+    url:  /about/
+  - title: Research
+    url: /Research/
   - title: "People"
     url: /people/
-  - title: "Location"
-    url: /location/
   - title: "Facilities"
+    url: /facilities/
