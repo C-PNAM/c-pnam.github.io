@@ -30,7 +30,7 @@ def fetch_and_save_bibliography(orcid_id, file_name)
   journal = {#{journal}},
   year = {#{year}},
   doi = {#{doi}},
-  url = {https://doi.org/#{doi}}
+  html = {https://doi.org/#{doi}}
 }
         BIBTEX
 
