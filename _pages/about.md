@@ -18,4 +18,3 @@ LE11 3TU
 
 [Campus map](https://maps.lboro.ac.uk/?l=sir-david-davies)
 
-{% bibliography %}
