@@ -41,4 +41,4 @@ gem "minimal-mistakes-jekyll"
 
 gem 'jekyll-scholar', group: :jekyll_plugins
 
-gem 'hide-custom-bibtex.rb'
+#gem 'hide-custom-bibtex.rb'
