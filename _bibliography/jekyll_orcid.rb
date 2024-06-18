@@ -31,6 +31,7 @@ def fetch_and_save_bibliography(orcid_id, file_name)
   year = {#{year}},
   doi = {#{doi}},
   html = {https://doi.org/#{doi}}
+  bibtex_show={true}
 }
         BIBTEX
 
