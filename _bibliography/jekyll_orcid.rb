@@ -29,7 +29,7 @@ def fetch_and_save_bibliography(orcid_id, file_name)
   title = {#{title}},
   journal = {#{journal}},
   year = {#{year}},
-  doi = {#{doi}}
+  doi = {#{doi}},
   url = {https://doi.org/#{doi}}
 }
         BIBTEX
@@ -46,5 +46,5 @@ end
 
 # Replace this with the ORCID iD you want to query
 orcid_id = "0000-0003-3243-3794"
-file_name = "bibliography.bib"
+file_name = "_bibliography/bibliography.bib"
 fetch_and_save_bibliography(orcid_id, file_name)
