@@ -50,10 +50,14 @@ include: ["_pages"]
 #  orcid: 0000-0002-1825-0097
 
 scholar:
+
+
   style: apa
   locale: en
+
   source: /_bibliography/
   bibliography: test.bib
+  bibliography_template: bib
 
 # Exclude from processing.
 # The following items will not be processed, by default.
