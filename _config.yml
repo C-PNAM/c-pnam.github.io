@@ -57,7 +57,7 @@ scholar:
 
   source: /_bibliography/
   bibliography: test.bib
-  bibliography_template: bib
+  #bibliography_template: bib
 
 #https://open-research.gemmadanks.com/tutorials/how-to-use-jekyll-scholar-with-github-pages/
 
