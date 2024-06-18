@@ -35,6 +35,8 @@ plugins:
   - jekyll-remote-theme
   - jekyll-scholar
 
+plugins_dir: ./_plugins
+
 theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "air" # "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 logo: "/images/centrelogo.png"
