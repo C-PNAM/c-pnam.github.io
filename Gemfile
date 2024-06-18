@@ -36,3 +36,5 @@ gem "http_parser.rb", "~> 0.6.0", :platforms => [:jruby]
 gem 'jekyll-remote-theme', '~> 0.4.3'
 
 gem "minimal-mistakes-jekyll"
+
+gem 'jekyll-scholar', group: :jekyll_plugins

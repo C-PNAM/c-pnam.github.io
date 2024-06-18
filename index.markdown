@@ -22,8 +22,13 @@ feature_row:
     url: /sces/
     #excerpt: "This is some sample content that goes here with **Markdown** formatting."
   - image_path: images/spin_liquid_logo.png
-    title: "Medical Physics"
+    title: "Medical Devices"
     excerpt: ""
+  - image_path: images/spin_liquid_logo.png
+    title: "High pressure physics"
+    excerpt: ""
+  - image_path: images/spin_liquid_logo.png
+    title: "Quantum technologies"
 
 carousels:
   - images: 
