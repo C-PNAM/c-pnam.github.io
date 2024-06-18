@@ -40,3 +40,5 @@ gem 'jekyll-remote-theme'#, '~> 0.4.3'
 gem "minimal-mistakes-jekyll"
 
 gem 'jekyll-scholar', group: :jekyll_plugins
+
+gem 'hide-custom-bibtex.rb'
