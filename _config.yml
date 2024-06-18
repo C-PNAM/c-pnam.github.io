@@ -54,8 +54,8 @@ plugins:
 scholar:
   style: apa
   locale: en
-  source: ./_plugins
-  bibliography: bibliography.bib
+  source: ./_bibliography/
+  bibliography: test.bib
 
 # Exclude from processing.
 # The following items will not be processed, by default.
