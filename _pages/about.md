@@ -2,7 +2,6 @@
 layout: single
 title: About
 permalink: /about/
-bibliography: test.bib
 ---
 
 Some overview things about the centre.
