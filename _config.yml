@@ -33,7 +33,7 @@ plugins:
   - jekyll-feed
   - jekyll-include-cache
   - jekyll-remote-theme
-  - jekyll/scholar
+  - jekyll-scholar
 
 theme: minimal-mistakes-jekyll
 minimal_mistakes_skin: "air" # "default", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
@@ -58,6 +58,8 @@ scholar:
   source: /_bibliography/
   bibliography: test.bib
   bibliography_template: bib
+
+#https://open-research.gemmadanks.com/tutorials/how-to-use-jekyll-scholar-with-github-pages/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
