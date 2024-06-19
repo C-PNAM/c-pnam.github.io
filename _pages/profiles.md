@@ -51,22 +51,22 @@ nav_order: 7
 </div>
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-      <a href="https://www.lboro.ac.uk/departments/physics/staff/pavel-borisov/">  
-      {% include figure.liquid loading="eager" path="assets/img/Pavel-Borisov-6334.jpg" title="example image" class="img-fluid rounded z-depth-1" %}</a>
+      <a href="https://www.lboro.ac.uk/departments/physics/staff/alexander-balanov/">  
+      {% include figure.liquid loading="eager" path="assets/img/Alexander-Balanov-0343.jpg" title="example image" class="img-fluid rounded z-depth-1" %}</a>
             <div class="caption" style="font-size: 1.2rem">
-     Dr Pavel Borisov
+     Dr Alexander Balanov
 </div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
       <a href="https://www.lboro.ac.uk/departments/physics/staff/kelly-morrison/">
-        {% include figure.liquid loading="eager" path="assets/img/Kelly-Morrison-confirmed.jpg" title="example image" class="img-fluid rounded z-depth-1" %}</a>
+        {% include figure.liquid loading="eager" path="assets/img/Pavel-Borisov-6334.jpg" title="example image" class="img-fluid rounded z-depth-1" %}</a>
                     <div class="caption" style="font-size: 1.2rem">
-     Prof Kelly Morrison
+     Dr Pavel Borisov
 </div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-      <a href="https://www.lboro.ac.uk/departments/physics/staff/joseph-betouras/">
-        {% include figure.liquid loading="eager" path="assets/img/joseph-betouras.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}</a>
+      <a href="https://www.lboro.ac.uk/departments/physics/staff/sarah-bugby/">
+        {% include figure.liquid loading="eager" path="assets/img/Sarah-Bugby-4483.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}</a>
                             <div class="caption" style="font-size: 1.2rem">
      Prof Kelly Morrison
 </div>
