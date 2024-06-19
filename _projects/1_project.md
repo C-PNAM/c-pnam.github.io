@@ -41,7 +41,7 @@ To give your project a background in the portfolio page, just add the img tag to
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.
+    This image can also have a caption. It's like magic.   <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a>
 </div>
 
 You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
