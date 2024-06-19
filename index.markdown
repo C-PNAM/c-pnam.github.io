@@ -46,11 +46,7 @@ header:
 
 
 Welcome to the Loughborough Centre for Condensed Matter (LCCM), a pioneering hub dedicated to advancing the frontiers of fundamental materials physics and technology. Our center focuses on the development and application of advanced materials, quantum technologies, neuromorphic devices, and biomedical innovations, including nuclear medicine.
-{% include feature_row %}
-<!-- <figure style="width: 80px" class="align-center">
-  <a href="/images/blackhole.jpg" title="The Pixel Tracker logo" alt="The Pixel Tracker logo">
-  <img src="/images/blackhole.jpg" alt=""></a>
-  <figcaption>Image caption.</figcaption>
-</figure> -->
+
+
 
 
