@@ -25,6 +25,9 @@ To give your project a background in the portfolio page, just add the img tag to
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
+    <div class="caption">
+    This image can also have a caption. It's like magic.<a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a>
+</div>
     <div class="col-sm mt-3 mt-md-0">
         {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
@@ -41,7 +44,7 @@ To give your project a background in the portfolio page, just add the img tag to
     </div>
 </div>
 <div class="caption">
-    This image can also have a caption. It's like magic.   <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a>
+    This image can also have a caption. It's like magic.<a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a>
 </div>
 
 You can also put regular text between your rows of images, even citations {% cite einstein1950meaning %}.
