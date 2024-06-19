@@ -28,9 +28,10 @@ nav_order: 7
 ---
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-      <a href="https://www.lboro.ac.uk/departments/physics/staff/sergey-saveliev/">  {% include figure.liquid loading="eager" path="assets/img/Sergey-Savelier-0803.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+      <a href="https://www.lboro.ac.uk/departments/physics/staff/sergey-saveliev/">  
+      {% include figure.liquid loading="eager" path="assets/img/Sergey-Savelier-0803.jpg" title="example image" class="img-fluid rounded z-depth-1" %}</a>
             <div class="caption" style="font-size: 1.2rem; font-style: italic">
-     Prof Sergey Saveliev</a>
+     Prof Sergey Saveliev
 </div>
     </div>
 
