@@ -30,18 +30,49 @@ nav_order: 7
     <div class="col-sm mt-3 mt-md-0">
       <a href="https://www.lboro.ac.uk/departments/physics/staff/sergey-saveliev/">  
       {% include figure.liquid loading="eager" path="assets/img/Sergey-Savelier-0803.jpg" title="example image" class="img-fluid rounded z-depth-1" %}</a>
-            <div class="caption" style="font-size: 1.2rem; font-style: italic">
+            <div class="caption" style="font-size: 1.2rem">
      Prof Sergey Saveliev
 </div>
     </div>
-
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/Kelly-Morrison-confirmed.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+      <a href="https://www.lboro.ac.uk/departments/physics/staff/kelly-morrison/">
+        {% include figure.liquid loading="eager" path="assets/img/Kelly-Morrison-confirmed.jpg" title="example image" class="img-fluid rounded z-depth-1" %}</a>
+                    <div class="caption" style="font-size: 1.2rem">
+     Prof Kelly Morrison
+</div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/joseph-betouras.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
+      <a href="https://www.lboro.ac.uk/departments/physics/staff/joseph-betouras/">
+        {% include figure.liquid loading="eager" path="assets/img/joseph-betouras.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}</a>
+                            <div class="caption" style="font-size: 1.2rem">
+     Prof Joseph Betouras
+</div>
     </div>
 </div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+      <a href="https://www.lboro.ac.uk/departments/physics/staff/pavel-borisov/">  
+      {% include figure.liquid loading="eager" path="assets/img/Pavel-Borisov-6334.jpg" title="example image" class="img-fluid rounded z-depth-1" %}</a>
+            <div class="caption" style="font-size: 1.2rem">
+     Dr Pavel Borisov
+</div>
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+      <a href="https://www.lboro.ac.uk/departments/physics/staff/kelly-morrison/">
+        {% include figure.liquid loading="eager" path="assets/img/Kelly-Morrison-confirmed.jpg" title="example image" class="img-fluid rounded z-depth-1" %}</a>
+                    <div class="caption" style="font-size: 1.2rem">
+     Prof Kelly Morrison
+</div>
+    </div>
+    <div class="col-sm mt-3 mt-md-0">
+      <a href="https://www.lboro.ac.uk/departments/physics/staff/joseph-betouras/">
+        {% include figure.liquid loading="eager" path="assets/img/joseph-betouras.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}</a>
+                            <div class="caption" style="font-size: 1.2rem">
+     Prof Kelly Morrison
+</div>
+    </div>
+</div>
+
 <div class="caption">
     Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
 </div>
