@@ -28,17 +28,17 @@ nav_order: 7
 ---
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-            <div class="caption" style="font-size: 0.95rem; font-style: italic">
-    This image can also have a caption. It's like magic.<a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a>
+        {% include figure.liquid loading="eager" path="assets/img/Sergey-Savelier-0803.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+            <div class="caption" style="font-size: 1.2rem; font-style: italic">
+     <a href="https://www.lboro.ac.uk/departments/physics/staff/sergey-saveliev/">Prof. Sergey Saveliev</a>
 </div>
     </div>
 
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/Kelly-Morrison-confirmed.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
     <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
+        {% include figure.liquid loading="eager" path="assets/img/joseph-betouras.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}
     </div>
 </div>
 <div class="caption">
