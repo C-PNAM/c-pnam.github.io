@@ -4,7 +4,7 @@ title: project 7
 description: with background image
 img: assets/img/4.jpg
 importance: 3
-category: work
+category: test
 related_publications: true
 ---
 
