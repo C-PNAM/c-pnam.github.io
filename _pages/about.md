@@ -2,11 +2,11 @@
 layout: about
 title: about
 permalink: /
-subtitle: \@ Department of Physics, Loughborough University, UK 
+subtitle: Department of Physics, Loughborough University, UK 
 
 profile:
   align: right
-  image: prof_pic.jpg
+  image: /assets/img/logo.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Department of Physics</p>
@@ -18,8 +18,5 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+Welcome to the Loughborough Centre for Condensed Matter (LCCM), a pioneering hub dedicated to advancing the frontiers of fundamental materials physics and technology. Our center focuses on the research and understanding of the fundamental physics of advanced materials and their applications in quantum technologies, neuromorphic devices, and nuclear medicine.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
