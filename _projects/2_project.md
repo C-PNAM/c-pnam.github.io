@@ -3,7 +3,7 @@ layout: page
 title: van der Waals heterostructures and devices
 description: 
 img: assets/img/vdWlogo.jpg
-importance: 2
+importance: 1
 category: work
 giscus_comments: false
 ---
