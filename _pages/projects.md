@@ -8,7 +8,6 @@ nav_order: 3
 display_categories: [work, fun]
 horizontal: false
 ---
-This page is a list of the current set of research themes that members of the centre are working on. 
 
 <!-- pages/projects.md -->
 <div class="projects">
