@@ -80,6 +80,7 @@ nav_order: 7
             <div class="caption" style="font-size: 1.2rem">
      Dr Mark Greenaway
 </div>
+</div>
     <div class="col-sm mt-3 mt-md-0">
       <a href="https://www.lboro.ac.uk/departments/physics/staff/anna-kusmartseva/">  
       {% include figure.liquid loading="eager" path="assets/img/Anna-Kusmartseva-3521.jpg" title="" class="img-fluid rounded z-depth-1" %}</a>
