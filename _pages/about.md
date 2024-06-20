@@ -6,7 +6,7 @@ subtitle: Department of Physics, Loughborough University, UK
 
 profile:
   align: right
-  image: /assets/img/logo.png
+  image: logo.png
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>Department of Physics</p>
