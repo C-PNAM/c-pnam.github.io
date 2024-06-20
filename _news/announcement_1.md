@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-We announce the launch of the Loughborough Centre for Condensed Matter
+We announce the launch of the Loughborough Centre for Condensed Matter 🎉
