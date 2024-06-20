@@ -1,81 +1,13 @@
 ---
 layout: page
-title: project 2
-description: a project with a background image and giscus comments
-img: assets/img/3.jpg
+title: van der Waals heterostructures and devices
+description: 
+img: assets/img/vdWlogo.jpg
 importance: 2
 category: work
-giscus_comments: true
+giscus_comments: false
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+Two-dimensional (2D) materials are extremely thin, often only a single atom thick, crystalline layers.  They can be created by reducing a bulk (3D) layered material (for example graphite) to its individual atomic layers (graphene) by repeated exfoliation, for example by using sticky tape!  The properties of layered bulk materials are transformed and can exhibit exciting new physical phenomena when they are reduced to a single layer.  Graphene, the first 2D material to be isolated, is a single layer of carbon atoms with many exciting new properties.  For example: it is one of the strongest materials but very flexible; electrons in graphene behave as if they have no mass and as if they are moving at the speed of light; and it is a better conductor of electricity than copper.  The discovery of graphene’s potential led to the isolation and characterisation of many other 2D materials. Nearly 700 different types of 2D materials are predicted to exist each with very interesting properties for applications and now research in 2D materials graphene has attracted investment and research by many companies and universities around the world.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
-
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
-
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, _bled_ for your project, and then... you reveal its glory in the next row of images.
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-
-```html
-<div class="row justify-content-sm-center">
-  <div class="col-sm-8 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-  <div class="col-sm-4 mt-3 mt-md-0">
-    {% include figure.liquid path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-  </div>
-</div>
-```
-
-{% endraw %}
+Here in the Physics department at Loughborough, our research activity on 2D materials is focused on understanding and developing their properties to create the next generation of novel magnetic, thermoelectric and electronic devices. We create new theories and models to understand how quantum physics can be used to control how electrical current flows through and between the layers of stacks of 2D materials. We investigate how interactions between electrons in these stacks can lead to new and exotic behaviour such as superconductivity at high temperatures. We are also fabricating and measuring heterostructures of 2D crystals for spintronic, thermoelectric and spin-caloritronic devices which take advantage of the intrinsic spin of electrons for low power, high frequency, logic and memory applications. We do our work in close collaboration with research groups around the world.  
