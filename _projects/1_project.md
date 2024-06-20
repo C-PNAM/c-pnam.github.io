@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Neuromorphic Computing
+title: Neuromorphic computing
 #description: Neuromorphic Computing
 img: assets/img/neuromorphiclogo.jpg
 importance: 1
