@@ -73,29 +73,36 @@ nav_order: 7
     </div>
 </div>
 <div class="row">
+
+ <div class="col-sm mt-3 mt-md-0">
+      <a href="https://www.lboro.ac.uk/departments/physics/staff/mark-greenaway/">  
+      {% include figure.liquid loading="eager" path="assets/img/Mark-Greenaway.jpg" title="" class="img-fluid rounded z-depth-1" %}</a>
+            <div class="caption" style="font-size: 1.2rem">
+     Dr Mark Greenaway
+</div>
     <div class="col-sm mt-3 mt-md-0">
       <a href="https://www.lboro.ac.uk/departments/physics/staff/anna-kusmartseva/">  
       {% include figure.liquid loading="eager" path="assets/img/Anna-Kusmartseva-3521.jpg" title="" class="img-fluid rounded z-depth-1" %}</a>
             <div class="caption" style="font-size: 1.2rem">
-     Dr Alexander Balanov
+     Dr Anna Kusmartseva
 </div>
     </div>
     <div class="col-sm mt-3 mt-md-0">
       <a href="https://www.lboro.ac.uk/departments/physics/staff/naemi-leo/">
         {% include figure.liquid loading="eager" path="assets/img/naemi-leo-staff-profile.jpg" title="" class="img-fluid rounded z-depth-1" %}</a>
                     <div class="caption" style="font-size: 1.2rem">
-     Dr Pavel Borisov
+     Dr Naëmi Leo
 </div>
     </div>
+   </div> 
+   <div class="row">
     <div class="col-sm mt-3 mt-md-0">
       <a href="https://www.lboro.ac.uk/departments/physics/staff/ioannis-rousochatzakis/">
         {% include figure.liquid loading="eager" path="assets/img/ioannis.jpeg" title="" class="img-fluid rounded z-depth-1" %}</a>
                             <div class="caption" style="font-size: 1.2rem">
-     Dr Sarah Bugby
+     Dr Ioannis Rousochatzakis
 </div>
     </div>
-</div>
-<div class="row">
     <div class="col-sm mt-3 mt-md-0">
       <a href="https://www.lboro.ac.uk/departments/physics/staff/jenny-spiga/">  
       {% include figure.liquid loading="eager" path="assets/img/Jenny-profile-480.jpg" title="" class="img-fluid rounded z-depth-1" %}</a>
@@ -107,14 +114,8 @@ nav_order: 7
       <a href="https://www.lboro.ac.uk/departments/physics/staff/alexandre-zagoskin/">
         {% include figure.liquid loading="eager" path="assets/img/Alexandre-Zagoskin---confirmed.jpg" title="" class="img-fluid rounded z-depth-1" %}</a>
                     <div class="caption" style="font-size: 1.2rem">
-     Dr Pavel Borisov
-</div>
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-      <a href="https://www.lboro.ac.uk/departments/physics/staff/ioannis-rousochatzakis/">
-        {% include figure.liquid loading="eager" path="assets/img/ioannis.jpeg" title="example image" class="img-fluid rounded z-depth-1" %}</a>
-                            <div class="caption" style="font-size: 1.2rem">
-     Dr Sarah Bugby
+     Dr Alex Zagoskin
+
 </div>
     </div>
 </div>

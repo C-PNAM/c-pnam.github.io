@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Neuromorphic Computing
-description: with background image
+#description: Neuromorphic Computing
 img: assets/img/neuromorphiclogo.jpg
 importance: 1
 category: work
