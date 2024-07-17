@@ -9,7 +9,7 @@ nav_order: 2
 
 <!-- _pages/publications.md -->
 <div class="publications">
-
-{% bibliography %}
+<!-- https://github.com/inukshuk/jekyll-scholar/tree/main -->
+{% bibliography --file bibliography --max 5 %}
 
 </div>
