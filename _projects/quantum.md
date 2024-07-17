@@ -3,7 +3,7 @@ layout: page
 title: Quantum device engineering
 description: 
 img: assets/img/quantum_engine_logo.png
-importance: 1
+importance: 2
 category: work
 ---
 

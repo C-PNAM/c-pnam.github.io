@@ -3,7 +3,7 @@ layout: page
 title: Theory of Strongly Correlated Electron Systems
 description: 
 img: assets/img/spin_liquid_logo.png
-importance: 1
+importance: 2
 category: work
 ---
 Designing material properties for technological breakthroughs can be only achieved via the complete understanding of the basic mechanisms that govern the collective behaviour of correlated electrons driving different phases (magnetic, superconducting, multiferroic) and desired characteristics (thermodynamic, transport). Quantum matter, either in equilibrium or out-of-equilibrium, organises itself following principles that modern experimental methods can now uncover. Theoretical efforts should lead to the understanding with predictive power and require modern techniques. There have been many challenges for the theory of correlated electrons, but recent developments and new ideas provide a fresh way forward to explain experimental data that had been a mystery for decades.

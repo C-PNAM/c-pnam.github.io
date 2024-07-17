@@ -3,7 +3,7 @@ layout: page
 title: Neuromorphic computing
 #description: Neuromorphic Computing
 img: assets/img/neuromorphiclogo.jpg
-importance: 1
+importance: 2
 category: work
 related_publications: true
 ---
