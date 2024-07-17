@@ -2,10 +2,10 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: LCCM # the website title (if blank, full name will be used instead)
-first_name: Loughborough  
+title: CPNAM # the website title (if blank, full name will be used instead)
+first_name:   
 middle_name: 
-last_name: Centre for Condensed Matter
+last_name: Centre for the Physics and Nanoengineering of Advanced Materials
 email: m.t.greenaway@lboro.ac.uk
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
