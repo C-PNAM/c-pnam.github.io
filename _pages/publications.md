@@ -10,6 +10,6 @@ nav_order: 2
 <!-- _pages/publications.md -->
 <div class="publications">
 <!-- https://github.com/inukshuk/jekyll-scholar/tree/main -->
-{% bibliography --file bibliography_mtg --file bibliography_km  %}
+{% bibliography %}
 
 </div>
