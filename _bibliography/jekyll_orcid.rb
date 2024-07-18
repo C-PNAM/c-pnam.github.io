@@ -46,6 +46,7 @@ def fetch_and_save_bibliography(orcid_id, file_name)
 end
 
 # Replace this with the ORCID iD you want to query
-orcid_id = "0000-0003-3243-3794"
-file_name = "_bibliography/bibliography.bib"
+#orcid_id = "0000-0003-3243-3794"  #MTG
+orcid_id = "0000-0001-5672-3310"  #KM
+file_name = "bibliography_km.bib"
 fetch_and_save_bibliography(orcid_id, file_name)
