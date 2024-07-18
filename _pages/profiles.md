@@ -36,7 +36,7 @@ nav_order: 7
     </div>
     <div class="col-sm mt-3 mt-md-0">
       <a href="https://www.lboro.ac.uk/departments/physics/staff/kelly-morrison/">
-        {% include figure.liquid loading="eager" path="assets/img/Kelly-Morrison-confirmed.jpg" title="" class="img-fluid rounded z-depth-1" %}</a>
+        {% include figure.liquid loading="eager" path="assets/img/Kelly-Morrison-8391.jpg" title="" class="img-fluid rounded z-depth-1" %}</a>
                     <div class="caption" style="font-size: 1.2rem">
      Prof Kelly Morrison
 </div>
