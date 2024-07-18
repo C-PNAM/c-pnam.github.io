@@ -1,5 +1,6 @@
 require 'httparty'
 require 'json'
+require 'set'
 
 # Function to fetch and save the bibliography from multiple ORCID profiles
 def fetch_and_save_bibliography(orcid_person_pairs, file_name)
@@ -7,6 +8,8 @@ def fetch_and_save_bibliography(orcid_person_pairs, file_name)
   headers = {
     "Accept" => "application/json"
   }
+
+  seen_dois = Set.new
 
   File.open(file_name, 'w') do |file|
     orcid_person_pairs.each do |orcid_id, person_id|
@@ -23,6 +26,15 @@ def fetch_and_save_bibliography(orcid_person_pairs, file_name)
           year = summary['publication-date'] ? summary['publication-date']['year']['value'] : "Unknown Year"
           ext_id = summary['external-ids']['external-id'].find { |id| id['external-id-type'] == 'doi' } rescue nil
           doi = ext_id ? ext_id['external-id-value'] : "Unknown DOI"
+
+          # Skip this work if the DOI has already been seen and is not "Unknown DOI"
+          if doi != "Unknown DOI" && seen_dois.include?(doi)
+            puts "Duplicate DOI found: #{doi}. Skipping entry."
+            next
+          end
+
+          # Add the DOI to the set of seen DOIs if it is known
+          seen_dois.add(doi) unless doi == "Unknown DOI"
 
           # Fetch detailed work information to get authors, volume, and page numbers
           work_detail_response = HTTParty.get("#{base_url}/#{orcid_id}/work/#{summary['put-code']}", headers: headers)
@@ -70,7 +82,8 @@ end
 # List of ORCID iDs and corresponding person IDs
 orcid_person_pairs = [
   ["0000-0003-3243-3794", "MTG"],
-  ["0000-0001-5672-3310", "KM"]
+  ["0000-0001-5672-3310", "KM"],
+  ["0000-0003-2771-230X", "SS"]
 ]
 
 file_name = "bibliography.bib"
