@@ -6,6 +6,7 @@ description: This is a list of all the publications of the centre members.
 nav: true
 nav_order: 2
 ---
+{% include bib_search.liquid %}
 
 <!-- _pages/publications.md -->
 <div class="publications">
