@@ -4,7 +4,8 @@ require 'set'
 
 # Function to fetch and save the bibliography from multiple ORCID profiles
 def fetch_and_save_bibliography(orcid_person_pairs, file_name)
-  base_url = "https://pub.orcid.org/v3.0"
+  orcid_base_url = "https://pub.orcid.org/v3.0"
+  crossref_base_url = "https://api.crossref.org/works"
   headers = {
     "Accept" => "application/json"
   }
@@ -14,7 +15,7 @@ def fetch_and_save_bibliography(orcid_person_pairs, file_name)
   File.open(file_name, 'w') do |file|
     orcid_person_pairs.each do |orcid_id, person_id|
       # Fetch the works from the ORCID profile
-      response = HTTParty.get("#{base_url}/#{orcid_id}/works", headers: headers)
+      response = HTTParty.get("#{orcid_base_url}/#{orcid_id}/works", headers: headers)
 
       if response.success?
         works = JSON.parse(response.body)['group']
@@ -36,21 +37,28 @@ def fetch_and_save_bibliography(orcid_person_pairs, file_name)
           # Add the DOI to the set of seen DOIs if it is known
           seen_dois.add(doi) unless doi == "Unknown DOI"
 
-          # Fetch detailed work information to get authors, volume, and page numbers
-          work_detail_response = HTTParty.get("#{base_url}/#{orcid_id}/work/#{summary['put-code']}", headers: headers)
+          # Fetch detailed work information to get authors
           authors = "Unknown Authors"
           volume = "Unknown Volume"
           pages = "Unknown Pages"
 
-          if work_detail_response.success?
-            work_detail = JSON.parse(work_detail_response.body)
-            contributors = work_detail.dig('contributors', 'contributor')
-            if contributors
-              authors = contributors.map { |contributor| contributor.dig('credit-name', 'value') }.join(", ")
-            end
+          # Fetch additional details from CrossRef using the DOI
+          if doi != "Unknown DOI"
+            crossref_response = HTTParty.get("#{crossref_base_url}/#{doi}", headers: headers)
+            if crossref_response.success?
+              crossref_data = JSON.parse(crossref_response.body)
 
-            volume = work_detail.dig('journal-issue', 'issue') || "Unknown Volume"
-            pages = work_detail.dig('biblio', 'pages') || "Unknown Pages"
+              # Extract authors if available
+              if crossref_data.dig('message', 'author')
+                authors = crossref_data['message']['author'].map { |author|
+                  "#{author['given']} #{author['family']}"
+                }.join(" and ")
+              end
+
+              # Extract volume and pages if available
+              volume = crossref_data.dig('message', 'volume') || volume
+              pages = crossref_data.dig('message', 'page') || pages
+            end
           end
 
           # Generate a BibTeX entry
@@ -81,13 +89,13 @@ end
 
 # List of ORCID iDs and corresponding person IDs
 orcid_person_pairs = [
-  ["0000-0003-3243-3794", "MTG"],
-  ["0000-0001-5672-3310", "KM"],
-  ["0000-0003-2771-230X", "SS"],
-  ["0000-0002-1678-0756", "AB"],
-  ["0000-0003-1464-6999", "PB"],
-  ["0000-0002-1605-8835", "FD"],
-  ["0000-0001-9589-6249", "SB"]
+  ["0000-0003-3243-3794", "MTG"]
+  #["0000-0001-5672-3310", "KM"],
+  #["0000-0003-2771-230X", "SS"],
+  #["0000-0002-1678-0756", "AB"],
+  #["0000-0003-1464-6999", "PB"],
+  #["0000-0002-1605-8835", "FD"],
+  #["0000-0001-9589-6249", "SB"]
 ]
 
 file_name = "bibliography.bib"
