@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Devices for Medical Physics
+title: Devices for medical physics
 description: 
 img: assets/img/gammaray.png
 importance: 2

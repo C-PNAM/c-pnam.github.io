@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Theory of Strongly Correlated Electron Systems
+title: Theory of strongly correlated electron systems
 description: 
 img: assets/img/spin_liquid_logo.png
 importance: 2
