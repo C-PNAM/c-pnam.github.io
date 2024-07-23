@@ -15,7 +15,15 @@ def fetch_and_save_bibliography(orcid_person_pairs, file_name)
   File.open(file_name, 'w') do |file|
     orcid_person_pairs.each do |orcid_id, person_id|
       # Fetch the works from the ORCID profile
-      response = HTTParty.get("#{orcid_base_url}/#{orcid_id}/works", headers: headers)
+      begin
+        response = HTTParty.get("#{orcid_base_url}/#{orcid_id}/works", headers: headers)
+      rescue HTTParty::Error => e
+        puts "Failed to fetch works for ORCID iD: #{orcid_id}. Error: #{e.message}"
+        next
+      rescue StandardError => e
+        puts "An unexpected error occurred: #{e.message}"
+        next
+      end
 
       if response.success?
         works = JSON.parse(response.body)['group']
@@ -37,14 +45,30 @@ def fetch_and_save_bibliography(orcid_person_pairs, file_name)
           # Add the DOI to the set of seen DOIs if it is known
           seen_dois.add(doi) unless doi == "Unknown DOI"
 
+          # Skip ArXiv versions directly, but we'll attach them to the main paper later
+          if journal.downcase.include?("arxiv")
+            puts "ArXiv version found: #{doi}. Skipping entry."
+            next
+          end
+
           # Fetch detailed work information to get authors
           authors = "Unknown Authors"
           volume = "Unknown Volume"
           pages = "Unknown Pages"
+          arxiv_versions = []
 
           # Fetch additional details from CrossRef using the DOI
           if doi != "Unknown DOI"
-            crossref_response = HTTParty.get("#{crossref_base_url}/#{doi}", headers: headers)
+            begin
+              crossref_response = HTTParty.get("#{crossref_base_url}/#{doi}", headers: headers)
+            rescue HTTParty::Error => e
+              puts "Failed to fetch CrossRef data for DOI: #{doi}. Error: #{e.message}"
+              next
+            rescue StandardError => e
+              puts "An unexpected error occurred: #{e.message}"
+              next
+            end
+
             if crossref_response.success?
               crossref_data = JSON.parse(crossref_response.body)
 
@@ -52,7 +76,7 @@ def fetch_and_save_bibliography(orcid_person_pairs, file_name)
               if crossref_data.dig('message', 'author')
                 authors = crossref_data['message']['author'].map { |author|
                   "#{author['given']} #{author['family']}"
-                }.join(" and ")
+                }.join(", ")
               end
 
               # Extract volume and pages if available
@@ -60,6 +84,11 @@ def fetch_and_save_bibliography(orcid_person_pairs, file_name)
               pages = crossref_data.dig('message', 'page') || pages
             end
           end
+
+          # Check for related ArXiv versions
+          related_works = summary.dig('external-ids', 'external-id') || []
+          related_arxiv = related_works.select { |id| id['external-id-type'] == 'arxiv' }
+          arxiv_versions.concat(related_arxiv.map { |arxiv| arxiv['external-id-value'] }) unless related_arxiv.empty?
 
           # Generate a BibTeX entry
           bibtex_entry = <<-BIBTEX
@@ -72,7 +101,8 @@ def fetch_and_save_bibliography(orcid_person_pairs, file_name)
   pages = {#{pages}},
   doi = {#{doi}},
   url = {https://doi.org/#{doi}},
-  bibtex_show = {true}
+  bibtex_show = {true},
+  arxiv_versions = {#{arxiv_versions.join(', ')}}
 }
           BIBTEX
 
@@ -89,7 +119,7 @@ end
 
 # List of ORCID iDs and corresponding person IDs
 orcid_person_pairs = [
-  ["0000-0003-3243-3794", "MTG"]
+  ["0000-0003-3243-3794", "MTG"],
   ["0000-0001-5672-3310", "KM"],
   ["0000-0003-2771-230X", "SS"],
   ["0000-0002-1678-0756", "AB"],
@@ -101,7 +131,7 @@ orcid_person_pairs = [
   ["0000-0002-3206-424X", "AK"],
   ["0000-0002-0828-6889", "NL"],
   ["0000-0002-6741-8028", "JS"],
-  
+  ["0000-0002-1189-5116", "AZ"]
 ]
 
 file_name = "bibliography.bib"
