@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Thermoplasmonics
+title: Magneto thermoelectrics and plasmonics
 description: 
 img: assets/img/thermoplasmonics.png
 importance: 2
