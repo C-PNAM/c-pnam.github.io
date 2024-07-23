@@ -86,7 +86,7 @@ def fetch_and_save_bibliography(orcid_person_pairs, file_name)
   volume = {#{volume}},
   pages = {#{pages}},
   doi = {#{doi}},
-  url = {https://doi.org/#{doi}},
+  html = {https://doi.org/#{doi}},
   bibtex_show = {true}
 }
           BIBTEX
