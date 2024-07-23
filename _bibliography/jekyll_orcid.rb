@@ -37,6 +37,12 @@ def fetch_and_save_bibliography(orcid_person_pairs, file_name)
           # Add the DOI to the set of seen DOIs if it is known
           seen_dois.add(doi) unless doi == "Unknown DOI"
 
+          # Skip ArXiv versions directly
+          if journal.downcase.include?("arxiv")
+            puts "ArXiv version found: #{doi}. Skipping entry."
+            next
+          end
+
           # Fetch detailed work information to get authors
           authors = "Unknown Authors"
           volume = "Unknown Volume"
@@ -44,7 +50,16 @@ def fetch_and_save_bibliography(orcid_person_pairs, file_name)
 
           # Fetch additional details from CrossRef using the DOI
           if doi != "Unknown DOI"
-            crossref_response = HTTParty.get("#{crossref_base_url}/#{doi}", headers: headers)
+            begin
+              crossref_response = HTTParty.get("#{crossref_base_url}/#{doi}", headers: headers)
+            rescue HTTParty::Error => e
+              puts "Failed to fetch CrossRef data for DOI: #{doi}. Error: #{e.message}"
+              next
+            rescue StandardError => e
+              puts "An unexpected error occurred: #{e.message}"
+              next
+            end
+
             if crossref_response.success?
               crossref_data = JSON.parse(crossref_response.body)
 
@@ -90,17 +105,18 @@ end
 # List of ORCID iDs and corresponding person IDs
 orcid_person_pairs = [
   ["0000-0003-3243-3794", "MTG"],
-   ["0000-0001-5672-3310", "KM"]
- # ["0000-0003-2771-230X", "SS"],
- # ["0000-0002-1678-0756", "AB"],
- # ["0000-0003-1464-6999", "PB"],
- # ["0000-0002-1605-8835", "FD"],
- # ["0000-0001-9589-6249", "SB"],
- # ["0000-0003-0574-4685", "JB"],
- # ["0000-0002-5517-8389", "IR"],
- # ["0000-0002-3206-424X", "AK"],
- # ["0000-0002-0828-6889", "NL"],
- # ["0000-0002-6741-8028", "JS"]
+  ["0000-0001-5672-3310", "KM"],
+  ["0000-0003-2771-230X", "SS"],
+  ["0000-0002-1678-0756", "AB"],
+  ["0000-0003-1464-6999", "PB"],
+  ["0000-0002-1605-8835", "FD"],
+  ["0000-0001-9589-6249", "SB"],
+  ["0000-0003-0574-4685", "JB"],
+  ["0000-0002-5517-8389", "IR"],
+  ["0000-0002-3206-424X", "AK"],
+  ["0000-0002-0828-6889", "NL"],
+  ["0000-0002-6741-8028", "JS"],
+  ["0000-0002-1189-5116", "AZ"]
 ]
 
 file_name = "bibliography.bib"
