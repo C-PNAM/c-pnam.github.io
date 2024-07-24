@@ -1,10 +1,10 @@
 ---
 layout: page
-title: project 9
-description: another project with an image 🎉
-img: assets/img/6.jpg
+title: Materials under pressure
+description: 
+img: assets/img/pressure.jpg
 importance: 4
-category: test
+category: work
 ---
 
 Every project has a beautiful feature showcase page.
