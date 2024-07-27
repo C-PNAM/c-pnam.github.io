@@ -107,7 +107,6 @@
     let rotating = false; // Flag to indicate rotation
     let secondRotation = false; // Flag to indicate second rotation
     let returning = false; // Flag to indicate returning to the starting point
-    let lookForward = false; // Flag to indicate looking forward
 
     // Render loop
     function animate() {
@@ -166,10 +165,11 @@
                 }
             } else {
                 // End the animation at the starting point and reset the camera
-                returning = false;
-                movingForward = true;
-                secondRotation = false;
                 resetCamera();
+                movingForward = true;
+                rotating = false;
+                secondRotation = false;
+                returning = false;
             }
         }
 
