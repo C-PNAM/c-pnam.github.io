@@ -112,6 +112,8 @@
 
     // Render loop
     function animate() {
+        if (cycleCount >= 2) return; // Stop the animation after two cycles
+
         requestAnimationFrame(animate);
 
         if (movingForward) {
@@ -176,11 +178,6 @@
                 secondRotation = false;
                 returning = false;
                 cycleCount++; // Increment the cycle count
-
-                // Stop the animation if two cycles are completed
-                if (cycleCount >= 2) {
-                    return;
-                }
             }
         }
 
