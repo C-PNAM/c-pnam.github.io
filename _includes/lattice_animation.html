@@ -1,4 +1,4 @@
-<div id="graphene-lattice-container" style="width: 100%; height: 600px;"></div>
+<div id="graphene-lattice-container" style="width: 800px; height: 600px; margin: 0 auto;"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
 <script>
@@ -6,9 +6,9 @@
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0xffffff); // Set background to white
 
-    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(75, 800 / 600, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(window.innerWidth, 600); // Match the height specified in the container
+    renderer.setSize(800, 600); // Set width to 800px and height to 600px
     const container = document.getElementById('graphene-lattice-container');
     container.appendChild(renderer.domElement);
 
@@ -165,7 +165,7 @@
                     camera.position.z += descentSpeed;
                 }
             } else {
-                // End the animation at the starting point
+                // End the animation at the starting point and reset the camera
                 returning = false;
                 movingForward = true;
                 secondRotation = false;
@@ -182,8 +182,8 @@
 
     // Handle window resize
     window.addEventListener('resize', () => {
-        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.aspect = 800 / 600;
         camera.updateProjectionMatrix();
-        renderer.setSize(window.innerWidth, 600); // Match the height specified in the container
+        renderer.setSize(800, 600); // Match the width and height specified in the container
     });
 </script>
