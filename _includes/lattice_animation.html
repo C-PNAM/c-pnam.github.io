@@ -108,6 +108,8 @@
     let secondRotation = false; // Flag to indicate second rotation
     let returning = false; // Flag to indicate returning to the starting point
 
+    let cycleCount = 0; // Counter to track the number of completed cycles
+
     // Render loop
     function animate() {
         requestAnimationFrame(animate);
@@ -173,6 +175,12 @@
                 rotating = false;
                 secondRotation = false;
                 returning = false;
+                cycleCount++; // Increment the cycle count
+
+                // Stop the animation if two cycles are completed
+                if (cycleCount >= 2) {
+                    return;
+                }
             }
         }
 
