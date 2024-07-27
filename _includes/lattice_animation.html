@@ -8,7 +8,7 @@
 
     const camera = new THREE.PerspectiveCamera(75, 800 / 600, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(800, 600); // Set width to 800px and height to 600px
+    renderer.setSize(800, 600);
     const container = document.getElementById('graphene-lattice-container');
     container.appendChild(renderer.domElement);
 
@@ -132,6 +132,9 @@
             // Check if the rotation is complete
             if (camera.rotation.y >= Math.PI) {
                 rotating = false;
+                if (!secondRotation) {
+                    movingForward = false;
+                }
             }
         } else if (!secondRotation) {
             if (camera.position.y > maxBackwardY) {
@@ -184,6 +187,6 @@
     window.addEventListener('resize', () => {
         camera.aspect = 800 / 600;
         camera.updateProjectionMatrix();
-        renderer.setSize(800, 600); // Match the width and height specified in the container
+        renderer.setSize(800, 600);
     });
 </script>
