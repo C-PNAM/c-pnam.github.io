@@ -83,7 +83,7 @@
     createLattice(30, false);
 
     // Set initial camera position
-    const initialCameraPosition = { x: 0, y: -200, z: 50 };
+    const initialCameraPosition = { x: 0, y: -100, z: 50 };
     const initialLookAt = new THREE.Vector3(0, 0, 50);
 
     function resetCamera() {
@@ -96,13 +96,17 @@
     // Animation variables
     const forwardSpeed = 0.2;
     const backwardSpeed = 0.2;
-    const descentSpeed = 0.025;
+    const descentSpeed = 0.04;
     const rotationSpeed = Math.PI / 360;
     const maxForwardY = 100;
     const middleZ = 15;
-    const maxBackwardY = -200;
+    const maxBackwardY = -150;
     let cycleCount = 0;
     let phase = 0;
+
+    function logCameraPosition() {
+        console.log(`Phase : ${phase},  Camera Rotation - y: ${camera.rotation.y}, y: ${camera.position.y}, z: ${camera.position.z}`);
+    }
 
     function animate() {
         if (cycleCount >= 2) return;
@@ -121,20 +125,36 @@
                 }
                 break;
             case 1:
-                camera.rotation.y += rotationSpeed;
-                if (camera.rotation.y >= Math.PI) {
+            if (camera.position.y > -150) {
+                    camera.position.y -= forwardSpeed;
+                    //if (camera.position.z > middleZ) {
+                        camera.position.z -= descentSpeed;
+                    //}
+                } else {
                     phase = 2;
                 }
                 break;
             case 2:
-                if (camera.position.y > maxBackwardY) {
-                    camera.position.y -= backwardSpeed;
-                    camera.position.z -= descentSpeed;
+            if (camera.position.y < maxForwardY) {
+                    camera.position.y += forwardSpeed;
+                    if (camera.position.z > middleZ) {
+                        camera.position.z += descentSpeed;
+                    }
                 } else {
                     phase = 3;
                 }
                 break;
             case 3:
+            if (camera.position.y > -150) {
+                    camera.position.y -= forwardSpeed;
+                    //if (camera.position.z > middleZ) {
+                        camera.position.z += descentSpeed;
+                    //}
+                } else {
+                    phase = 0;
+                }
+            break;
+            /*case 3:
                 camera.rotation.y += rotationSpeed;
                 if (camera.rotation.y >= Math.PI * 2) {
                     phase = 4;
@@ -151,9 +171,10 @@
                     phase = 0;
                     cycleCount++;
                 }
-                break;
+                break;*/
         }
 
+        logCameraPosition();
         camera.lookAt(new THREE.Vector3(0, 0, middleZ));
         renderer.render(scene, camera);
     }

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphene Lattice Animation</title>
+</head>
+<body>
+    <div id="graphene-lattice-container" style="width: 800px; height: 600px; margin: 0 auto;"></div>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
+    <script>
+        // Set up the scene, camera, and renderer
+        const scene = new THREE.Scene();
+        scene.background = new THREE.Color(0xffffff);
+
+        const camera = new THREE.PerspectiveCamera(75, 800 / 600, 0.1, 1000);
+        const renderer = new THREE.WebGLRenderer();
+        renderer.setSize(800, 600);
+        const container = document.getElementById('graphene-lattice-container');
+        container.appendChild(renderer.domElement);
+
+        // Set up the lattice constants
+        const a = 0.71;
+        const sqrt3 = Math.sqrt(3);
+        const scale = 10;
+
+        // Lattice vectors (scaled)
+        const a1 = new THREE.Vector3(3 / 2 * a * scale, sqrt3 / 2 * a * scale, 0);
+        const a2 = new THREE.Vector3(3 / 2 * a * scale, -sqrt3 / 2 * a * scale, 0);
+
+        // Basis atom positions
+        const atoms = [
+            new THREE.Vector3(0, 0, 0),
+            new THREE.Vector3(a * scale, 0, 0)
+        ];
+
+        // Create a sphere geometry for the carbon atoms
+        const atomGeometry = new THREE.SphereGeometry(0.6, 32, 32);
+        const blueAtomMaterial = new THREE.MeshBasicMaterial({ color: 0x4285F4 });
+        const redAtomMaterial = new THREE.MeshBasicMaterial({ color: 0xDB4437 });
+        const yellowAtomMaterial = new THREE.MeshBasicMaterial({ color: 0xF4B400 });
+        const greenAtomMaterial = new THREE.MeshBasicMaterial({ color: 0x0F9D58 });
+
+        function createAtom(x, y, z, material) {
+            const atom = new THREE.Mesh(atomGeometry, material);
+            atom.position.set(x, y, z);
+            scene.add(atom);
+        }
+
+        // Function to create the lattice
+        function createLattice(zPosition, isAlternateColor) {
+            const xmin = -100;
+            const xmax = 100;
+            const ymin = -100;
+            const ymax = 100;
+            const gridRange = 80;
+
+            for (let i = -gridRange; i < gridRange; i++) {
+                for (let j = -gridRange; j < gridRange; j++) {
+                    const xOffset = i * a1.x + j * a2.x;
+                    const yOffset = i * a1.y + j * a2.y;
+
+                    if (xOffset >= xmin && xOffset <= xmax && yOffset >= ymin && yOffset <= ymax) {
+                        atoms.forEach((atom, index) => {
+                            let material;
+                            if (isAlternateColor) {
+                                material = (index % 4 === 0) ? redAtomMaterial :
+                                           (index % 4 === 1) ? yellowAtomMaterial :
+                                           (index % 4 === 2) ? greenAtomMaterial : blueAtomMaterial;
+                            } else {
+                                material = blueAtomMaterial;
+                            }
+                            createAtom(xOffset + atom.x, yOffset + atom.y, zPosition, material);
+                        });
+                    }
+                }
+            }
+        }
+
+        // Create the first lattice (blue atoms)
+        createLattice(0, false);
+
+        // Create the second lattice (alternating colors)
+        createLattice(10, true);
+
+        // Create the third lattice (alternating colors)
+        createLattice(20, true);
+
+        // Create the fourth lattice (blue atoms)
+        createLattice(30, false);
+
+        // Set initial camera position
+        const initialCameraPosition = { x: 0, y: -100, z: 50 };
+        const initialLookAt = new THREE.Vector3(0, 0, 50);
+
+        function resetCamera() {
+            camera.position.set(initialCameraPosition.x, initialCameraPosition.y, initialCameraPosition.z);
+            camera.lookAt(initialLookAt);
+        }
+
+        resetCamera();
+
+        // Animation variables
+        const forwardSpeed = 0.2;
+        const backwardSpeed = 0.2;
+        const descentSpeed = 0.04;
+        const rotationSpeed = Math.PI / 360;
+        const maxForwardY = 100;
+        const middleZ = 15;
+        const maxBackwardY = -150;
+        let cycleCount = 0;
+        let phase = 0;
+
+        function logCameraPosition() {
+            console.log(`Phase : ${phase},  Camera Rotation - y: ${camera.rotation.y}, y: ${camera.position.y}, z: ${camera.position.z}`);
+        }
+
+        function animate() {
+            if (cycleCount >= 2) return;
+
+            requestAnimationFrame(animate);
+
+            switch (phase) {
+                case 0:
+                    if (camera.position.y < maxForwardY) {
+                        camera.position.y += forwardSpeed;
+                        if (camera.position.z > middleZ) {
+                            camera.position.z -= descentSpeed;
+                        }
+                    } else {
+                        phase = 1;
+                    }
+                    break;
+                case 1:
+                if (camera.position.y > -150) {
+                        camera.position.y -= forwardSpeed;
+                        //if (camera.position.z > middleZ) {
+                            camera.position.z -= descentSpeed;
+                        //}
+                    } else {
+                        phase = 2;
+                    }
+                    break;
+                case 2:
+                if (camera.position.y < maxForwardY) {
+                        camera.position.y += forwardSpeed;
+                        if (camera.position.z > middleZ) {
+                            camera.position.z += descentSpeed;
+                        }
+                    } else {
+                        phase = 3;
+                    }
+                    break;
+                case 3:
+                if (camera.position.y > -150) {
+                        camera.position.y -= forwardSpeed;
+                        //if (camera.position.z > middleZ) {
+                            camera.position.z += descentSpeed;
+                        //}
+                    } else {
+                        phase = 0;
+                    }
+                break;
+                /*case 3:
+                    camera.rotation.y += rotationSpeed;
+                    if (camera.rotation.y >= Math.PI * 2) {
+                        phase = 4;
+                    }
+                    break;
+                case 4:
+                    if (camera.position.y < 0) {
+                        camera.position.y += forwardSpeed;
+                        if (camera.position.z < 50) {
+                            camera.position.z += descentSpeed;
+                        }
+                    } else {
+                        resetCamera();
+                        phase = 0;
+                        cycleCount++;
+                    }
+                    break;*/
+            }
+
+            logCameraPosition();
+            camera.lookAt(new THREE.Vector3(0, 0, middleZ));
+            renderer.render(scene, camera);
+        }
+        animate();
+
+        window.addEventListener('resize', () => {
+            camera.aspect = 800 / 600;
+            camera.updateProjectionMatrix();
+            renderer.setSize(800, 600);
+        });
+    </script>
+</body>
+</html>
