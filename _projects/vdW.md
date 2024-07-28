@@ -16,26 +16,35 @@ Our research activity on 2D materials is focused on understanding and developing
 
 ## **Recent outputs**
 
-# **Electronic transport phenomena in graphene-based van der Waals devices.**  
+#### **Electronic transport phenomena in graphene-based van der Waals devices.**  
 
-We have been studying, in collaboration with the Universities of Manchester and Nottingham, the fundamental physics of the properties of electrons in monolayer graphene and graphene-based heterostructures devices with discoveries which will be important for the design of 2D electronic devices.  See links to some of our key publications below and associated news articles
+We have been studying the fundamental physics of the properties of electrons in monolayer graphene and graphene-based heterostructures devices with discoveries which will be important for the design of 2D electronic devices.  Below are the outputs of some of our recent investigations.
+
+[Defect assisted tunnelling in graphene-based transistors reveal a correlated electron state](/maggap/)
 
 {% reference maggap2023 --file fixed_bib %}
 
-{% bibliography --file fixed_bib --query @*[id=maggap2023] %}
 
-[News announcment: Defect assisted tunnelling in graphene-based transistors reveal a correlated electron state](/maggap/)
+<!-- {% bibliography --file fixed_bib --query @*[id=maggap2023] %} -->
+
+
+
+[The mesoscopic Schwinger effect](https://www.nature.com/articles/s41567-023-02019-1)
 
 {% reference science2022 --file fixed_bib %}
 
-[News and views:  Mesoscopic Schwinger effect](https://www.nature.com/articles/s41567-023-02019-1)
+
+
+[Supersonic electrons in graphene](https://www.lboro.ac.uk/departments/physics/news/2021/graphene-research/)
 
 {% reference natcomm2021 --file fixed_bib %} 
 
-[Press release: Supersonic electrons in graphene](https://www.lboro.ac.uk/departments/physics/news/2021/graphene-research/)
+
+[The effects of chirality and pseudospin on quantum tunnelling between graphene layers)[https://physicsworld.com/a/chirality-affects-current-flow-in-graphene-transistors/?alm_mvr=0/]
+
+
 
 {% reference natphys2015 --file fixed_bib %}
 
-[The effects of chirality and pseudospin on quantum tunnelling between graphene layers)[https://physicsworld.com/a/chirality-affects-current-flow-in-graphene-transistors/?alm_mvr=0/]
 
 
