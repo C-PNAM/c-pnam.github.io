@@ -13,12 +13,12 @@ Insights into the fundamental properties of graphene’s Dirac-Weyl fermions hav
 
         {% include figure.liquid loading="eager" path="assets/img/defect_tunnelling.png" title="" class="img-fluid rounded z-depth-1" %}
 
-In this article, we show that when a single defect is present within the hBN tunnel barrier, it can inject electrons into the graphene layers and its sharply defined energy level acts as a high resolution spectroscopic probe of electron-electron interactions in graphene. We report a magnetic field dependent suppression of the tunnel current flowing through a single defect below temperatures of ~2 K. This is attributed to the formation of a magnetically-induced Coulomb gap in the spectral density of electrons tunnelling into graphene due to electron-electron interactions.
+In this article, we show that when a single defect is present within the hBN tunnel barrier, it can inject electrons into the graphene layers and its sharply defined energy level acts as a high resolution spectroscopic probe of electron-electron interactions in graphene. We report a magnetic field dependent suppression of the tunnel current flowing through a single defect below temperatures of ~2 K. This is attributed to the formation of a magnetically-induced Coulomb gap in the spectral density of electrons tunnelling into graphene due to electron-electron interactions. Our work opens new ways to probe correlated states in 2D devices.
 
 To read more about our new paper see this article:
 
-{% reference maggap2023 --file fixed_bib.bib}
+{% reference maggap2023 --file fixed_bib.bib %}
 
 and for our first paper on defect assisted tunnelling see this reference:
 
-{% reference commphys2018 --file fixed_bib.bib}
+{% reference commphys2018 --file fixed_bib.bib %}
