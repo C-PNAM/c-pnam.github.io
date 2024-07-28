@@ -1,4 +1,4 @@
-<div id="graphene-lattice-container" style="width: 800px; height: 600px; margin: 0 auto;"></div>
+<div id="graphene-lattice-container" style="width: 800px; height: 400px; margin: 0 auto;"></div>
 
 <script src="https://cdn.jsdelivr.net/npm/three@0.150.1/build/three.min.js"></script>
 <script>
@@ -6,9 +6,9 @@
     const scene = new THREE.Scene();
     scene.background = new THREE.Color(0xffffff);
 
-    const camera = new THREE.PerspectiveCamera(75, 800 / 600, 0.1, 1000);
+    const camera = new THREE.PerspectiveCamera(75, 800 / 400, 0.1, 1000);
     const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(800, 600);
+    renderer.setSize(800, 400);
     const container = document.getElementById('graphene-lattice-container');
     container.appendChild(renderer.domElement);
 
@@ -181,8 +181,8 @@
     animate();
 
     window.addEventListener('resize', () => {
-        camera.aspect = 800 / 600;
+        camera.aspect = 800 / 400;
         camera.updateProjectionMatrix();
-        renderer.setSize(800, 600);
+        renderer.setSize(800, 400);
     });
 </script>
