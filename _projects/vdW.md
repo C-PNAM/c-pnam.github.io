@@ -32,7 +32,7 @@ We have been studying the fundamental physics of the properties of electrons in 
 
 {% reference natcomm2021 --file fixed_bib %} 
 
-[The effects of chirality and pseudospin on quantum tunnelling between graphene layers)[https://physicsworld.com/a/chirality-affects-current-flow-in-graphene-transistors/?alm_mvr=0/]
+[The effects of chirality and pseudospin on quantum tunnelling between graphene layers](https://physicsworld.com/a/chirality-affects-current-flow-in-graphene-transistors/?alm_mvr=0/)
 
 {% reference natphys2015 --file fixed_bib %}
 
