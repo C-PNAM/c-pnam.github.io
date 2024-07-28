@@ -24,25 +24,17 @@ We have been studying the fundamental physics of the properties of electrons in 
 
 {% reference maggap2023 --file fixed_bib %}
 
-
 <!-- {% bibliography --file fixed_bib --query @*[id=maggap2023] %} -->
-
-
 
 [The mesoscopic Schwinger effect](https://www.nature.com/articles/s41567-023-02019-1)
 
 {% reference science2022 --file fixed_bib %}
 
-
-
 [Supersonic electrons in graphene](https://www.lboro.ac.uk/departments/physics/news/2021/graphene-research/)
 
 {% reference natcomm2021 --file fixed_bib %} 
 
-
 [The effects of chirality and pseudospin on quantum tunnelling between graphene layers)[https://physicsworld.com/a/chirality-affects-current-flow-in-graphene-transistors/?alm_mvr=0/]
-
-
 
 {% reference natphys2015 --file fixed_bib %}
 
