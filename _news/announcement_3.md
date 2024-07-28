@@ -17,8 +17,8 @@ In this article, we show that when a single defect is present within the hBN tun
 
 To read more about our new paper see this article:
 
-{% reference maggap2023 --file fixed_bib.bib %}
+{% reference maggap2023 --file fixed_bib %}
 
 and for our first paper on defect assisted tunnelling see this reference:
 
-{% reference commphys2018 --file fixed_bib.bib %}
+{% reference commphys2018 --file fixed_bib %}
