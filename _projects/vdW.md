@@ -14,13 +14,15 @@ Two-dimensional (2D) materials are extremely thin, often only a single atom thic
 
 Our research activity on 2D materials is focused on understanding and developing their properties to create the next generation of novel magnetic, thermoelectric and electronic devices. We characterise new 2D materials, fabricate new devices, and create new theories and models to understand how quantum physics can be used to control how electrical current flows through and between the layers of stacks of 2D materials. We investigate how interactions between electrons in these stacks can lead to new and exotic behaviour such as superconductivity at high temperatures. We are also creating new heterostructures of 2D crystals for spintronic, thermoelectric and spin-caloritronic devices which take advantage of the intrinsic spin of electrons for low power, high frequency, logic and memory applications. We do our work in close collaboration with research groups around the world. 
 
-## Recent outputs
+## **Recent outputs**
 
-### Electronic transport phenomena in graphene-based van der Waals devices.  
+# **Electronic transport phenomena in graphene-based van der Waals devices.**  
 
 We have been studying, in collaboration with the Universities of Manchester and Nottingham, the fundamental physics of the properties of electrons in monolayer graphene and graphene-based heterostructures devices with discoveries which will be important for the design of 2D electronic devices.  See links to some of our key publications below and associated news articles
 
 {% reference maggap2023 --file fixed_bib %}
+
+{% bibliography --file fixed_bib --query @*[id=maggap2023] %}
 
 [News announcment: Defect assisted tunnelling in graphene-based transistors reveal a correlated electron state](/maggap/)
 
