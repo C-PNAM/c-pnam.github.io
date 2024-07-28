@@ -24,8 +24,6 @@ We have been studying the fundamental physics of the properties of electrons in 
 
 {% reference maggap2023 --file fixed_bib %}
 
-<!-- {% bibliography --file fixed_bib --query @*[id=maggap2023] %} -->
-
 [The mesoscopic Schwinger effect](https://www.nature.com/articles/s41567-023-02019-1)
 
 {% reference science2022 --file fixed_bib %}
